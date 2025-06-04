@@ -1,0 +1,8 @@
+# Terraform generated files
+.terraform/                 # Terraform's working directory (contains plugins, modules)
+*.tfstate                   # The primary state file
+*.tfstate.* # State file backups
+crash.log                   # Crash logs
+*.tfplan                    # Saved plan files
+.terraformrc                # Terraform CLI configuration file
+.terraform.lock.hcl         # Terraform lock files
