@@ -24,7 +24,6 @@ resource "docker_container" "vault_dev_server" {
   env = ["VAULT_ADDR=http://0.0.0.0:8200"]
   rm = true
 
-  # This 'triggers' tells Terraform to run null_resource after docker_container is created.
   # The provisioner ensures the container is indeed up and responsive on port 8200
   # before Terraform marks this resource as "complete".
   # This helps the Vault provider connect successfully without connection refused errors.
