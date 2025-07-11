@@ -69,7 +69,7 @@ You can use Terraform to set up a Vault dev server running in a container locall
     ```bash
     terraform init
     ```
-3. Apply the Terraform configuration
+3. Apply the Terraform configuration; you will be prompted for the path to your license file
     ```bash
     terraform apply -auto-approve
     ```
